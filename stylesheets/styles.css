@@ -170,9 +170,9 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
+  float:inherit;
   padding-bottom:50px;
+  padding-top:50px;
 }
 
 small {
