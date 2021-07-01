@@ -1,73 +1,10 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title>Jonghyeon Kim</title>
+---
+layout: default
+title: "Home"
+---
 
-		<link rel="stylesheet" href="stylesheets/styles.css">
-		<link rel="stylesheet" href="stylesheets/pygment_trac.css">
-		<meta name="viewport" content="width=device-width">
-		<!--[if lt IE 9]>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="wrapper">
-			<header>
-				<h1>Jonghyeon Kim</h1>
-			</header>
-			<section>
-				<h1>About</h1>
-				<p>
-				I am a Ph.D. student in the Department of Artificial Intelligence at Ajou University. 
-                I am a member of <a href="http://csl.ajou.ac.kr">Computer System Laboratory(CSL)</a> led by <a href="http://jeongseob.github.io">Prof. Jeongseob Ahn</a>.
-				My research interests include Computer Architecture, Operating Systems, and Systems for Machine Learning.
-				Mainly, I am interested in developing system software for emerging hardware such as non-volatile memory.
-                </p>
-
-				<h1>Research Interests</h1>
-				<ul>
-                    <li>Computer Architecutre</li>
-                    <li>Operating Systems</li>
-                    <li>Linux Kenrel</li>
-                    <li>Memory Management</li>
-                    <li>Systems for ML</li>
-				</ul>
-
-				<h1>Education</h1>
-				<ul>
-					<li>Ph.D. in Department of Artificial Intelligence at Ajou University, Mar 2019 ~ Present</li>
-					<li>B.S. in Chemistry and B.E. in Electrical and Computer Engineering (dual degree) at Ajou University, Feb 2019</li>
-				</ul>
-
-				<h1 id="publications">Publications</h1>
-				<div id="journals">
-					<ul>
-						<li class="paper">
-							<div>
-								<div class="title">[ATC '21] <b>Exploring the Design Space of Page Management for Multi-Tiered Memory Systems</b>
-									[<a href="https://www.usenix.org/conference/atc21/presentation/kim-jonghyeon">paper</a>]</div>
-								<div class="conference">
-									<i>Proceedings of the 2021 USENIX Annual Technical Conference (ATC), Virtual Event, July 2021</i>
-								</div>
-								<div class="authors"><u>Jonghyeon Kim</u>, Wonkyo Choe, Jeongseob Ahn</div>
-							</div>
-						</li>
-						<li class="paper">
-							<div>
-								<div class="title">[CAL '20] <b>A Study of Memory Placement on Hardware-Assisted Tiered Memory Systems</b> 
-									[<a href="https://ieeexplore.ieee.org/document/9165024">paper</a>]</div>
-								<div class="journal">
-									<i>IEEE Computer Architecture Letters (CAL), 19(2), July-December 2020</i>
-								</div>
-								<div class="authors">Wonkyo Choe, <u>Jonghyeon Kim</u>, Jeongseob Ahn</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-		<script src="javascripts/scale.fix.js"></script>
-	</body>
-</html>
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
