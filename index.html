@@ -1,4 +1,10 @@
-remote_theme: niklasbuschmann/contrast@v2.11
+---
+layout: default
+title: "About"
+---
 
-plugins:
-  - jekyll-remote-theme
+{% if site.show_excerpts %}
+    {% include home.html %}
+{% else %}
+    {% include index.html title="About" %}
+{% endif %}
